@@ -1,0 +1,24 @@
+<template>
+    <lightning-card class="slds-m-around_medium"
+    title="Toplama"
+    icon-name="standard:account">
+   
+   <lightning-input 
+   class="slds-m-around_medium"
+   placeholder="Bir sayi giriniz"
+   type="number" 
+   label="num1"
+   onchange={handleNum1}
+   ></lightning-input>
+   <lightning-input 
+   class="slds-m-around_medium"
+   placeholder="Bir sayi giriniz"
+   type="number" 
+   label="num2"
+   onchange={handleNum2}
+   ></lightning-input>
+   <div class="slds-m-around_medium">
+     Birinci Sayi: {num1} + Ikinci Sayi: {num2} = Toplam ={toplam}
+ </div>
+</lightning-card>
+</template>

@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="if true false kullanimi" 
+    icon-name="standard:campaign"
+    class="slds-m-around_medium">
+    <h1 class="slds-m-around_medium">Flag: {flag}</h1>
+        <template 
+        if:true={flag}>
+            <h1>Flag true, bu mesaj goruldu!</h1>
+        </template>
+    </lightning-card>
+    <!-------------Checkbox---------------------->
+    <lightning-card class="slds-m-around_medium"
+    title="Sozlesme">
+    <template if:false={display}>
+        <h1>Lutfen bu sozlesmeyi babul ediniz!</h1>
+    </template>
+    <lightning-input type="checkbox"
+    label="Kabul Ediniz!"
+    onchange={handleChange}></lightning-input>
+</lightning-card>
+</template>
